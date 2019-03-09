@@ -21,6 +21,13 @@ a {
 
 .topNavBar {
     padding: 20px 0;
+    position: fixed;
+    width: 100%;
+}
+
+.banner {
+    background-image: url('img/rs-cover.jpg');
+    height: 500px;
 }
 
 .topNavBar-inner {
