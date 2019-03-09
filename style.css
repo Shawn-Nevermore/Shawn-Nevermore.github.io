@@ -4,8 +4,8 @@
 }
 
 body {
-    background: black;
-    color: white;
+    background: #EFEFEF;
+    color: black;
 }
 
 a {
@@ -23,11 +23,20 @@ a {
     padding: 20px 0;
     position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .banner {
-    background-image: url('img/rs-cover.jpg');
-    height: 500px;
+    background-image: url('./img/apex.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 900px;
+}
+
+.banner .mask {
+    height: 900px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .topNavBar-inner {
@@ -77,4 +86,41 @@ a {
 
 .topNavBar-inner nav ul li a:hover {
     border-bottom: 3px solid #e06567;
+}
+
+.nameCard {
+    background-color: white;
+    max-width: 840px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nameCard .pic {
+    float: left;
+}
+
+.nameCard .text {
+    float: left;
+    margin-left: 65px;
+}
+
+.nameCard .text .welcome {
+    display: inline-block;
+    background: #e6686a;
+    color: white;
+    padding: 4px 16px;
+    line-height: 22px;
+    position: relative;
+}
+
+.nameCard .text .welcome .triangle {
+    display: block;
+    border: 10px solid transparent;
+    width: 0;
+    border-left-color: #e6686a;
+    border-top-width: 0;
+    position: absolute;
+    top: 100%;
+    left: 4px;
 }
