@@ -116,10 +116,6 @@ hr {
     /* border: 1px solid red; */
 }
 
-.nameCard .text .profile {
-    /* width: 100%; */
-}
-
 .nameCard .text .welcome {
     display: inline-block;
     background: #e6686a;
@@ -189,4 +185,36 @@ hr {
     height: 26px;
     fill: white;
     vertical-align: top;
+}
+
+.download-wrapper {
+    text-align: center;
+}
+
+.download-wrapper .button {
+    display: inline-block;
+    color: #3d4451;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 16px;
+    padding: 21px 55px;
+    margin: 32px 0;
+    border: 1px solid #cdcfd1;
+    background: #efefef;
+    border-radius: 2px;
+    transition: box-shadow 0.2s;
+}
+
+.download-wrapper .button:hover {
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.3);
+}
+
+.selfIntro {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
 }
