@@ -75,12 +75,12 @@
             </div>
 
             <footer class="media">
-                <a href="">
+                <a href="https://www.jianshu.com/u/9e10fddb2bba" target="_blank">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-yanzheng-jianshu"></use>
                     </svg>
                 </a>
-                <a href="">
+                <a href="https://github.com/Shawn-Nevermore" target="_blank">
 
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-github"></use>
@@ -92,8 +92,8 @@
                         <use xlink:href="#icon-qq"></use>
                     </svg>
                 </a>
-                <a href="">
 
+                <a href="">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-weibo"></use>
                     </svg>
@@ -120,42 +120,99 @@
         </div>
 
         <p class="selfIntro">
-            Welcome, my gorgeous friend. <br> This is my resume page.
+            许骁，前端工程师
+            <br> 理解RIA，有Ajax相关的实践经验，熟练使用VUE.js框架，且了解其基本原理
+            <br> 对可用性、可访问性等相关知识有实际的了解和实践经验
+            <br> 熟悉服务器端Web应用结构，有服务器端脚本语言经验
+
         </p>
     </main>
 
     <!-- 技能section -->
-    <section>
+    <section class="skills">
         <h2>技能</h2>
-        <ol>
-            <li>HTML5 &amp; CSS3</li>
-            <li>Javascript</li>
-            <li>jQuery</li>
-            <li>Vue</li>
-            <li>React</li>
-            <li>HTTP</li>
+        <ol class="clearfix">
+            <li>
+                <h3>HTML5 &amp; CSS3</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                    JavaScript
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                    AJAX
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 50%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                    Vue
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 30%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                    Webpack
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 10%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>
+                    HTTP
+                </h3>
+                <div class="progressBar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+            </li>
         </ol>
     </section>
 
     <!-- 作品集section -->
-    <section>
+    <section class="portfolio">
         <h2>作品集</h2>
         <nav>
-            <ol>
+            <ol class="clearfix">
                 <li>所有</li>
                 <li>框架</li>
-                <li>原生Js &amp; CSS</li>
+                <li>原生Js&CSS</li>
             </ol>
+            <div id="portfolioBar" class="bar state-1">
+                <div class="bar-inner"></div>
+            </div>
         </nav>
 
+        <script>
+            portfolio1.onclick = function() {
+                portfolioBar.className = 'bar state-1'
+            }
+            portfolio2.onclick = function() {
+                portfolioBar.className = 'bar state-2'
+            }
+            portfolio3.onclick = function() {
+                portfolioBar.className = 'bar state-3'
+            }
+        </script>
         <div class="works">
             <div class="big"></div>
             <div class="small"></div>
             <div class="origin"></div>
         </div>
     </section>
-
-
+    <footer></footer>
 </body>
 
 </html>
