@@ -354,7 +354,36 @@ hr {
     transition: all 0.3s;
 }
 
-.portfolio>nav .bar.state-1 .bar-inner {
+.portfolio nav .bar.state-1 .bar-inner {
     margin-left: 0;
-    width: 50px;
+    width: 60px;
+}
+
+.portfolio nav .bar.state-2 .bar-inner {
+    margin-left: 60px;
+    width: 90px;
+}
+
+.portfolio nav .bar.state-3 .bar-inner {
+    margin-left: 150px;
+    width: 120px;
+}
+
+
+/* .portfolio nav .works {
+    max-width: 940px;
+    height: 597px;
+}
+
+.portfolio nav .works div {
+    float: left;
+} */
+
+.portfolio .works {
+    position: relative;
+}
+
+.portfolio .works>.big,
+.portfolio .works>.small {
+    position: absolute;
 }
