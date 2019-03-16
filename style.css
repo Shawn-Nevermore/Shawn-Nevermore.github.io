@@ -1,15 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
 }
 
 body {
     background: #EFEFEF;
     color: black;
+=======
+    /* box-sizing: border-box; */
+>>>>>>> 42f1f6bfe8aa6bc3b8fff00f51b1cb6a1e419bcc
 }
 
 a {
     text-decoration: none;
+<<<<<<< HEAD
     color: inherit;
 }
 
@@ -386,4 +391,88 @@ hr {
 .portfolio .works>.big,
 .portfolio .works>.small {
     position: absolute;
+=======
+}
+
+body {
+<<<<<<< HEAD
+    background: #97cbff url(./img/blue.jpg) no-repeat center center;
+=======
+    background-color: #dfdfdf;
+    background-image: url(./img/blue.jpg);
+>>>>>>> 61b6a6d6001385631a278c3db39f8c81a6f43665
+    background-size: cover;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main .keyboard-wrapper {
+<<<<<<< HEAD
+    background: rgb(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 30px 20px 20px 30px;
+=======
+    display: inline-block;
+>>>>>>> 61b6a6d6001385631a278c3db39f8c81a6f43665
+}
+
+main .keyboard-wrapper div kbd {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 47px;
+    height: 69px;
+    border-radius: 8px;
+    padding: 0 12px;
+    line-height: 69px;
+    margin: 0 12px 12px 0;
+    background-color: #000;
+    color: #fff;
+    font-family: keyboard, "Arial Rounded", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+main .keyboard-wrapper div:nth-child(2) {
+    margin-left: -20px;
+}
+
+main .keyboard-wrapper div:nth-child(3) {
+    margin-left: -100px;
+}
+
+main .keyboard-wrapper div kbd button {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    display: none;
+}
+
+main .keyboard-wrapper div kbd:hover button {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 20px;
+    height: 20px;
+    font-family: keyboard, "Arial Rounded", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 3px;
+    color: #dbdbdba2;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+main .keyboard-wrapper div kbd img {
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    height: 20px;
+    width: 20px;
+>>>>>>> 42f1f6bfe8aa6bc3b8fff00f51b1cb6a1e419bcc
 }
