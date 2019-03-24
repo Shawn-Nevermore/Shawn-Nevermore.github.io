@@ -12,17 +12,11 @@ a {
     text-decoration: none;
 }
 
-ul,
-ol {
+ul, ol {
     list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
@@ -160,8 +154,7 @@ hr {
     /* width: 100%; */
 }
 
-.nameCard .text dl dt,
-.nameCard .text dl dd {
+.nameCard .text dl dt, .nameCard .text dl dd {
     float: left;
     padding: 5px 0;
 }
@@ -232,16 +225,14 @@ hr {
     font-size: 18px;
 }
 
-.skills,
-.portfolio {
+.skills, .portfolio {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
 }
 
-.skills h2,
-.portfolio h2 {
+.skills h2, .portfolio h2 {
     text-align: center;
     color: #3d4451;
     font-size: 34px;
@@ -256,9 +247,7 @@ hr {
     /* padding-right: 40px; */
 }
 
-
 /* 浮动+border-box实现 */
-
 
 /* 
 .skills ol {
@@ -290,7 +279,6 @@ hr {
     background: #E6686A;
     border-radius: 2px;
 }
-
 
 /* flex实现 */
 
@@ -368,7 +356,6 @@ hr {
     width: 120px;
 }
 
-
 /* .portfolio nav .works {
     max-width: 940px;
     height: 597px;
@@ -382,7 +369,6 @@ hr {
     position: relative;
 }
 
-.portfolio .works>.big,
-.portfolio .works>.small {
+.portfolio .works>.big, .portfolio .works>.small {
     position: absolute;
 }
