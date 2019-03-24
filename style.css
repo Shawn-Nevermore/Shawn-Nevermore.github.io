@@ -26,6 +26,14 @@ hr {
     border-top: 1px solid #DEDEDE;
 }
 
+svg.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
 .clearfix::after {
     content: '';
     display: block;
@@ -54,18 +62,6 @@ hr {
     padding-top: 4px;
 }
 
-.banner {
-    background-image: url('./img/apex.jpg');
-    background-size: auto 515px;
-    background-position: center center;
-    height: 515px;
-}
-
-.banner .mask {
-    height: 515px;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
 .topNavBar-inner {
     padding: 0 16px;
 }
@@ -92,14 +88,15 @@ hr {
     float: right;
 }
 
-.topNavBar-inner nav ul li {
+.topNavBar-inner nav>ul>li {
     float: left;
     margin: 0 17px;
+    font-size: 12px;
+    position: relative;
 }
 
-.topNavBar-inner nav ul li a {
+.topNavBar-inner nav>ul>li a {
     color: inherit;
-    font-size: 12px;
     font-weight: bold;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
@@ -108,17 +105,53 @@ hr {
     position: relative;
 }
 
-.topNavBar-inner nav ul li a:hover::after {
-    content: '';
+.topNavBar-inner nav>ul>li .submenu {
+    display: none;
+}
+
+.topNavBar-inner nav>ul>li.active .submenu {
     display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 100%;
+    background: white;
+    color: #3d4451;
+    padding: 5px 10px;
+    animation: submenuSlide .4s ease-in-out;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes submenuSlide {
+    0% {
+        opacity: 0;
+        margin-right: 100%;
+    }
+    100% {
+        opacity: 1;
+        margin-right: 0;
+    }
+}
+
+.topNavBar-inner nav>ul>li .submenu li {
+    white-space: nowrap;
+    display: block;
+    padding: 5px 0;
+}
+
+.topNavBar-inner nav>ul>li.active a::after, .topNavBar-inner nav>ul>li:hover a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    
     height: 3px;
     top: 100%;
     left: 0;
     width: 100%;
     background: #e06567;
-    position: absolute;
     animation: menuSlide .3s;
 }
+
 
 @keyframes menuSlide {
     0% {
@@ -127,6 +160,18 @@ hr {
     100% {
         width: 100%;
     }
+}
+
+.banner {
+    background-image: url('./img/apex.jpg');
+    background-size: auto 515px;
+    background-position: center center;
+    height: 515px;
+}
+
+.banner .mask {
+    height: 515px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .nameCard {
