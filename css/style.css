@@ -116,8 +116,9 @@ svg.icon {
     right: 0;
     top: 100%;
     background: white;
+    font-size: 16px;
     color: #3d4451;
-    padding: 5px 10px;
+    padding: 10px 20px;
     animation: submenuSlide .4s ease-in-out;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
@@ -143,7 +144,6 @@ svg.icon {
     content: '';
     position: absolute;
     display: block;
-    
     height: 3px;
     top: 100%;
     left: 0;
@@ -151,7 +151,6 @@ svg.icon {
     background: #e06567;
     animation: menuSlide .3s;
 }
-
 
 @keyframes menuSlide {
     0% {
@@ -163,7 +162,7 @@ svg.icon {
 }
 
 .banner {
-    background-image: url('./img/apex.jpg');
+    background-image: url('../img/apex.jpg');
     background-size: auto 515px;
     background-position: center center;
     height: 515px;
