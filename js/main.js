@@ -3,11 +3,22 @@ setTimeout(function () {
     siteWelcome.classList.remove('active')
 }, 600)
 
+let specialTags = document.querySelectorAll('[data-x]')
+for (let i = 1; i < specialTags.length; i++) {
+    specialTags[i].classList.add('offset')
+}
+
+setTimeout(() => {
+    findClosest()
+}, 800);
 // 导航栏动画
 window.onscroll = function () {
     // 添加屏幕滚动的导航栏动画
     window.scrollY ? topNavBar.classList.add('sticky') : topNavBar.classList.remove('sticky')
+    findClosest()
+}
 
+function findClosest() {
     // 添加导航链接自动高亮
     let specialTags = document.querySelectorAll('[data-x]')
     let minIndex = 0
@@ -16,13 +27,15 @@ window.onscroll = function () {
             minIndex = i
         }
     }
+
+    specialTags[minIndex].classList.remove('offset')
     let id = specialTags[minIndex].id
     let a = document.querySelector('a[href = "#' + id + '"]')
     let children = a.parentNode.parentNode.children
     for (let i = 0; i < children.length; i++) {
-        children[i].classList.remove('active')
+        children[i].classList.remove('highlight')
     }
-    a.parentNode.classList.add('active')
+    a.parentNode.classList.add('highlight')
 }
 
 // 下拉列表动画

@@ -40,6 +40,24 @@ svg.icon {
     clear: both;
 }
 
+[data-x].offset {
+    transform: translateY(200px);
+}
+
+[data-x] {
+    transform: translateY(0);
+    transition: all .3s ease-in-out;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100px)
+    }
+    100% {
+        transform: translate(0)
+    }
+}
+
 .topNavBar {
     padding: 20px 0;
     position: fixed;
@@ -140,7 +158,7 @@ svg.icon {
     padding: 5px 0;
 }
 
-.topNavBar-inner nav>ul>li.active a::after, .topNavBar-inner nav>ul>li:hover a::after {
+.topNavBar-inner nav>ul>li.active a::after, .topNavBar-inner nav>ul>li:hover a::after, .topNavBar-inner nav>ul>li.highlight a::after {
     content: '';
     position: absolute;
     display: block;
@@ -345,12 +363,19 @@ svg.icon {
     background: #FAE1E1;
     border-radius: 2px;
     margin: 4px 0 40px;
+    overflow: hidden;
 }
 
 .skills .progressBar .progress {
     height: 100%;
     background: #E6686A;
     border-radius: 2px;
+    transform: translateX(0);
+    transition: all 1s ease-out;
+}
+
+.skills.offset .progressBar .progress {
+    transform: translateX(-100%);
 }
 
 /* flex实现 */
