@@ -1,11 +1,28 @@
 // 欢迎页动画
 setTimeout(function () {
     siteWelcome.classList.remove('active')
-}, 1000)
+}, 600)
 
 // 导航栏动画
 window.onscroll = function () {
+    // 添加屏幕滚动的导航栏动画
     window.scrollY ? topNavBar.classList.add('sticky') : topNavBar.classList.remove('sticky')
+
+    // 添加导航链接自动高亮
+    let specialTags = document.querySelectorAll('[data-x]')
+    let minIndex = 0
+    for (let i = 1; i < specialTags.length; i++) {
+        if (Math.abs(specialTags[i].offsetTop - window.scrollY) < Math.abs(specialTags[minIndex].offsetTop - window.scrollY)) {
+            minIndex = i
+        }
+    }
+    let id = specialTags[minIndex].id
+    let a = document.querySelector('a[href = "#' + id + '"]')
+    let children = a.parentNode.parentNode.children
+    for (let i = 0; i < children.length; i++) {
+        children[i].classList.remove('active')
+    }
+    a.parentNode.classList.add('active')
 }
 
 // 下拉列表动画
@@ -20,7 +37,7 @@ for (let i = 0; i < liTags.length; i++) {
     }
 }
 
-// 锚点定位
+// 页面内平滑跳转
 // Setup the animation loop.
 function animate(time) {
     requestAnimationFrame(animate);
