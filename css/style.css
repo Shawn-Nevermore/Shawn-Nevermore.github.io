@@ -407,66 +407,17 @@ svg.icon {
     margin-bottom: 100px
 }
 
-.portfolio nav {
-    /* display: flex; */
-    margin-top: 32px;
+.portfolio .swiper-container {
+    width: 668px;
+    height: 501px;
+    margin-top: 30px;
 }
 
-.portfolio nav ol {
-    width: 270px;
-    margin: 0 auto;
+.portfolio .swiper-container .swiper-slide {
+    object-position: center center;
+    object-fit: cover;
+    text-align: center;
     display: flex;
-    justify-content: space-between;
-}
-
-.portfolio nav ol li {
-    cursor: pointer;
-    flex: 1
-}
-
-.portfolio nav .bar {
-    height: 5px;
-    width: 270px;
-    background: white;
-    margin: 5px auto 28px;
-    border-radius: 2px;
-}
-
-.portfolio nav .bar .bar-inner {
-    height: 100%;
-    background: #E6686A;
-    border-radius: 2px;
-    transition: all 0.3s;
-}
-
-.portfolio nav .bar.state-1 .bar-inner {
-    margin-left: 0;
-    width: 60px;
-}
-
-.portfolio nav .bar.state-2 .bar-inner {
-    margin-left: 60px;
-    width: 90px;
-}
-
-.portfolio nav .bar.state-3 .bar-inner {
-    margin-left: 150px;
-    width: 120px;
-}
-
-/* .portfolio nav .works {
-    max-width: 940px;
-    height: 597px;
-}
-
-.portfolio nav .works div {
-    float: left;
-} */
-
-.portfolio .works {
-    position: relative;
-}
-
-.portfolio .works>.big, .portfolio .works>.small {
-    position: absolute;
+    justify-content: center;
+    align-items: center;
 }
