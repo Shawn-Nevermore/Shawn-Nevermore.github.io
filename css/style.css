@@ -426,7 +426,7 @@ svg.icon {
     color: rgba(255, 255, 255, 0.4);
     background-color: rgba(0, 0, 0, 0.15);
     background-size: 50%;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
