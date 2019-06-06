@@ -15,6 +15,8 @@
 5.  作品集跳转
 
 uiao.info 下的其他项目一览：
-阴阳八卦：http://uiao.info/YinYang
-我的书签：[http://uiao.info/myBookmarks](http://uiao.info/myBookmarks)
-
+-   阴阳八卦：http://uiao.info/YinYang
+-   我的书签：https://uiao.info/myBookmarks
+-   手机画板：https://uiao.info/canvas-demo
+-   轮播（回家的诱惑）：https://uiao.info/swiper-demo
+-   无缝轮播：https://uiao.info/swiper-demo/my-infinity-carousel

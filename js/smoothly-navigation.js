@@ -1,5 +1,6 @@
 !function () {
-    // 页面内平滑跳转
+    var view = document.querySelector('.topNavBar nav')
+    let aTags = view.querySelectorAll('ul > li > a')
     // Setup the animation loop.
     function animate(time) {
         requestAnimationFrame(animate);
@@ -7,7 +8,6 @@
     }
     requestAnimationFrame(animate);
 
-    let aTags = document.querySelectorAll('.topNavBar nav > ul > li > a')
     for (let i = 0; i < aTags.length; i++) {
         aTags[i].onclick = function (clickEvent) {
             // myTweenSroll()

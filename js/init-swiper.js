@@ -1,5 +1,6 @@
 !function () {
-    var mySwiper = new Swiper('.swiper-container', {
+    var view = document.querySelector('.swiper-container')
+    var mySwiper = new Swiper(view, {
         slidesPerView: 1,
         loop: true,
         centeredSlides: true,
