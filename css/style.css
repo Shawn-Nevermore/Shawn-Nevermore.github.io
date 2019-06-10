@@ -413,13 +413,9 @@ svg.icon {
     margin-top: 30px;
 }
 
-.portfolio .swiper-container .swiper-slide {
+.portfolio .swiper-wrapper img {
     object-position: center center;
     object-fit: cover;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .swiper-button-next, .swiper-button-prev {
