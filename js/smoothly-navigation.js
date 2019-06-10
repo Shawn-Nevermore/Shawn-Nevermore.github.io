@@ -1,28 +1,48 @@
 !function () {
     var view = document.querySelector('.topNavBar nav')
-    let aTags = view.querySelectorAll('ul > li > a')
-    // Setup the animation loop.
-    function animate(time) {
-        requestAnimationFrame(animate);
-        TWEEN.update(time);
-    }
-    requestAnimationFrame(animate);
 
-    for (let i = 0; i < aTags.length; i++) {
-        aTags[i].onclick = function (clickEvent) {
-            // myTweenSroll()
+    var controller = {
+        view: null,
 
-            // 禁用默认锚点跳转，导航栏会遮挡
-            clickEvent.preventDefault()
+        initAnimation: function () {
+            requestAnimationFrame(animate)
 
-            let targetTop = document.querySelector(clickEvent.currentTarget.getAttribute('href')).offsetTop - 100
+            function animate(time) {
+                requestAnimationFrame(animate)
+                TWEEN.update(time)
+            }
+        },
+
+        init: function (view) {
+            this.view = view
+            this.initAnimation()
+            this.bindEvents()
+        },
+
+        bindEvents: function () {
+            let aTags = this.view.querySelectorAll('ul > li > a')
+            for (let i = 0; i < aTags.length; i++) {
+                aTags[i].onclick = (e) => {
+                    // 禁用默认锚点跳转，导航栏会遮挡
+                    e.preventDefault()
+
+                    let element = document.querySelector(e.currentTarget.getAttribute('href'))
+
+                    // 如果不用箭头函数，这里的this会指向每个aTags，就无法调用到controller的scrollToElement
+                    this.scrollToElement(element)
+                }
+            }
+        },
+
+        scrollToElement: function (element) {
+            let targetTop = element.offsetTop - 100
             let currentTop = window.scrollY
             let s = targetTop - currentTop
 
             // 设置一个t根据跳转距离增加而增加，上限.5s
             let t = Math.abs(s / 100 * 200) > 500 ? 500 : Math.abs(s / 100 * 200)
 
-            let coords = { y: currentTop };
+            let coords = { y: currentTop }
             let tween = new TWEEN.Tween(coords) // Create a new tween that modifies 'coords'.
                 .to({ y: targetTop }, t)
                 .easing(TWEEN.Easing.Quadratic.InOut) // Use an easing function to make the animation smooth.
@@ -31,8 +51,8 @@
                 })
                 .start();
         }
-    }
 
+    }
 
     // 没有用tweenjs实现的页面滚动跳转
     function myTweenSroll() {
@@ -72,4 +92,6 @@
 
         }, duration)
     }
+
+    controller.init(view)
 }.call()

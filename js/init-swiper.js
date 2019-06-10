@@ -2,8 +2,8 @@
     var view = document.querySelector('.swiper-container')
     var controller = {
         view: null,
-        swiper:null,
-        swiperOptions:{            
+        swiper: null,
+        swiperOptions: {
             slidesPerView: 1,
             loop: true,
             centeredSlides: true,
@@ -32,9 +32,9 @@
         },
         init: function (view) {
             this.view = view
-            this.initSwiper()    
+            this.initSwiper()
         },
-        initSwiper:function(){
+        initSwiper: function () {
             this.swiper = new Swiper(view, this.swiperOptions)
         }
     }
