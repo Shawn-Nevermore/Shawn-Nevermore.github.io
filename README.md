@@ -20,3 +20,4 @@ uiao.info 下的其他项目一览：
 -   手机画板：https://uiao.info/canvas-demo
 -   轮播（回家的诱惑）：https://uiao.info/swiper-demo
 -   无缝轮播：https://uiao.info/swiper-demo/my-infinity-carousel
+-   苹果风格轮播：https://uiao.info/swiper-demo/apple-like-gallery
