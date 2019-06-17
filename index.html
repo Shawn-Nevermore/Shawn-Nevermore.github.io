@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>许骁个站</title>
+    <title>许骁个站 - Xu Xiao's Personal Website</title>
 
     <link rel="stylesheet" href="./css/loading.css">
     <link rel="stylesheet" href="./node_modules/swiper/dist/css/swiper.min.css">
@@ -53,7 +53,7 @@
                     </li>
                     <li><a href="#">日历</a></li>
                     <li><a href="#">联系方式</a></li>
-                    <li><a href="#">其他</a></li>
+                    <li><a href="#siteComments">留言</a></li>
                 </ul>
             </nav>
         </div>
@@ -234,15 +234,36 @@
         </div>
     </section>
 
-    <footer></footer>
+    <!-- 留言区section -->
+    <section data-x class="comments" id="siteComments">
+        <div class="comments-open" id="comments-open">
+            <h2 class="comments-open-header">留 言</h2>
+
+        </div>
+        <div class="comments-content" id="comments-content"></div>
+    </section>
+
+    <footer>
+    </footer>
+
+    <aside class="tools-wrapper" tabindex="0" aria-hidden="true">
+        <a class="gotop icon" href="#" title="回到顶部" style="display: block;">
+            ↑
+        </a>
+        <a class="hash-to-comments icon" title="我要评论">
+            ℡
+        </a>
+    </aside>
 
     <script src="./node_modules/swiper/dist/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-live-query-min.js"></script>
     <script src="./js/Tween.js"></script>
     <script src="./js/init-swiper.js"></script>
     <script src="./js/auto-slide-up.js"></script>
     <script src="./js/sticky-topbar.js"></script>
     <script src="./js/smoothly-navigation.js"></script>
+    <script src="./js/message.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
