@@ -1,3 +1,5 @@
+/*=S 初始化 */
+
 * {
     margin: 0;
     padding: 0;
@@ -57,6 +59,10 @@ svg.icon {
         transform: translate(0)
     }
 }
+
+/* =E 初始化 */
+
+/* =S 导航栏模块 */
 
 .topNavBar {
     padding: 20px 0;
@@ -179,6 +185,10 @@ svg.icon {
     }
 }
 
+/* =E 导航栏模块 */
+
+/* =S 背景图模块 */
+
 .banner {
     background-image: url('../img/apex.jpg');
     background-size: auto 515px;
@@ -190,6 +200,10 @@ svg.icon {
     height: 515px;
     background-color: rgba(0, 0, 0, 0.7);
 }
+
+/* =E 背景图模块 */
+
+/* =S 名片模块，含介绍段落，下载按钮 */
 
 .nameCard {
     background-color: white;
@@ -316,6 +330,10 @@ svg.icon {
     font-size: 18px;
 }
 
+/* =E 名片模块，含介绍段落，下载按钮 */
+
+/* =S 技能、作品集、留言 公用信息 */
+
 .skills, .portfolio, .message {
     max-width: 940px;
     margin-left: auto;
@@ -332,13 +350,17 @@ svg.icon {
     /* word-spacing: 30px; */
 }
 
+/* =E 技能、作品集、留言 公用信息 */
+
+/* =S 技能模块 */
+
 .skills h3 {
     font-size: 14px;
     line-height: 1.1;
     /* padding-right: 40px; */
 }
 
-/* 浮动+border-box实现 */
+/* ==技能模块：浮动+border-box实现 */
 
 /* 
 .skills ol {
@@ -378,7 +400,7 @@ svg.icon {
     transform: translateX(-100%);
 }
 
-/* flex实现 */
+/* ==技能模块：flex实现 */
 
 .skills ol {
     display: flex;
@@ -402,6 +424,10 @@ svg.icon {
 .skills ol li:nth-child(even) {
     margin: 0 0 0 15px;
 }
+
+/* =E 技能模块 */
+
+/* =S 作品集模块 */
 
 .portfolio {
     margin-bottom: 100px
@@ -437,6 +463,10 @@ svg.icon {
     right: -3px;
 }
 
+/* =E 作品集模块 */
+
+/* =S 侧边工具模块 */
+
 .tools-wrapper {
     position: fixed;
     right: 15px;
@@ -466,3 +496,5 @@ svg.icon {
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: .2px;
 }
+
+/* =E 侧边工具模块 */
