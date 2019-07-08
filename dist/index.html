@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>许骁个站 - Xu Xiao's Personal Website</title>
 
-    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="/loading.82c13e97.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/style.78032849.css">
 
     <script src="//at.alicdn.com/t/font_1079522_s9oiz7wh4a.js"></script>
-</head>
+<script src="/loading.82c13e97.js"></script><script src="/style.78032849.js"></script></head>
 
 <body>
     <!-- 欢迎页 -->
@@ -64,11 +64,11 @@
     </div>
 
     <!-- 核心main：名片，简介，下载按钮 -->
-    <main data-x id="siteMain">
+    <main data-x="" id="siteMain">
         <div class="nameCard">
             <div class="picNtext clearfix">
                 <div class="pic">
-                    <img src="./img/avatar.jpg" alt="">
+                    <img src="/avatar.2d652685.jpg" alt="">
                 </div>
                 <div class="text">
                     <div class="profile">
@@ -132,7 +132,7 @@
 
         <!-- 如果要转到某个地方就用a标签，如果要弹出一个框就用button标签 -->
         <div class="download-wrapper">
-            <a href="#" class="button" target="_blank" download>下载 PDF 简历</a>
+            <a href="#" class="button" target="_blank" download="">下载 PDF 简历</a>
         </div>
 
         <p class="selfIntro">
@@ -149,7 +149,7 @@
     </main>
 
     <!-- 技能section -->
-    <section data-x class="skills" id="siteSkills">
+    <section data-x="" class="skills" id="siteSkills">
         <h2>技 能</h2>
         <ol class="clearfix">
             <li>
@@ -202,7 +202,7 @@
     </section>
 
     <!-- 作品集section -->
-    <section data-x class="portfolio" id="sitePortfolio">
+    <section data-x="" class="portfolio" id="sitePortfolio">
         <h2>作 品 集</h2>
 
         <!-- Slider main container -->
@@ -211,16 +211,16 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <a class="swiper-slide" href="https://uiao.info/myBookmarks/" target="_blank">
-                    <img src="./img/nav-page.jpg" alt="" class="swiper-slide">
+                    <img src="/nav-page.67f826c2.jpg" alt="" class="swiper-slide">
                 </a>
                 <a class="swiper-slide" href="https://uiao.info/canvas-demo" target="_blank">
-                    <img src="./img/canvas.jpg" alt="" class="swiper-slide">
+                    <img src="/canvas.4a5ac105.jpg" alt="" class="swiper-slide">
                 </a>
                 <a class="swiper-slide" href="https://uiao.info/swiper-demo/apple-like-gallery/" target="_blank">
-                    <img src="./img/apple-style-slides.jpg" alt="" class="swiper-slide">
+                    <img src="/apple-style-slides.b97775ea.jpg" alt="" class="swiper-slide">
                 </a>
                 <a class="swiper-slide" href="https://uiao.info/YinYang/" target="_blank">
-                    <img src="./img/yingyang.jpg" alt="" class="swiper-slide">
+                    <img src="/yingyang.fa4351de.jpg" alt="" class="swiper-slide">
                 </a>
             </div>
             <!-- If we need pagination -->
@@ -234,19 +234,15 @@
     </section>
 
     <!-- 留言区section -->
-    <section class="message">
-        <h2>留 言</h2>
+    <section data-x="" class="comments" id="siteComments">
+        <!--PC和WAP自适应版-->
+        <div id="SOHUCS"></div>
 
-        <form id="postMessageForm" style="width: 700px; margin: 50px auto;">
-            <label for="">姓 名</label>
-            <input type="text" name="name">
-            <label for="">内 容</label>
-            <input type="text" name="content">
-            <input type="submit" value="提交">
-        </form>
+        <div class="comments-open" id="comments-open">
+            <h2 class="comments-open-header">留 言</h2>
 
-        <ol id="messageList">
-        </ol>
+        </div>
+        <div class="comments-content" id="comments-content"></div>
     </section>
 
     <footer>
@@ -263,14 +259,55 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-live-query-min.js"></script>
-    <script src="./js/Tween.js"></script>
-    <script src="./js/init-swiper.js"></script>
-    <script src="./js/auto-slide-up.js"></script>
-    <script src="./js/sticky-topbar.js"></script>
-    <script src="./js/smoothly-navigation.js"></script>
-    <script src="./js/message.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="/Tween.184a9a8d.js"></script>
+    <script src="/init-swiper.5febf0d4.js"></script>
+    <script src="/auto-slide-up.7a25ca20.js"></script>
+    <script src="/sticky-topbar.5ebf55e2.js"></script>
+    <script src="/smoothly-navigation.b9a5310c.js"></script>
+    <script src="/message.baa57d69.js"></script>
+    <script src="/main.fb6bbcaf.js"></script>
 
+    <script>(function () {
+  var appid = 'cyuhVn0rr';
+  var conf = 'prod_283793711745b3ab95c77f4f2108f433';
+  var width = window.innerWidth || document.documentElement.clientWidth;
+
+  if (width < 960) {
+    window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>');
+  } else {
+    var loadJs = function loadJs(d, a) {
+      var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+      var b = document.createElement("script");
+      b.setAttribute("type", "text/javascript");
+      b.setAttribute("charset", "UTF-8");
+      b.setAttribute("src", d);
+
+      if (typeof a === "function") {
+        if (window.attachEvent) {
+          b.onreadystatechange = function () {
+            var e = b.readyState;
+
+            if (e === "loaded" || e === "complete") {
+              b.onreadystatechange = null;
+              a();
+            }
+          };
+        } else {
+          b.onload = a;
+        }
+      }
+
+      c.appendChild(b);
+    };
+
+    loadJs("http://changyan.sohu.com/upload/changyan.js", function () {
+      window.changyan.api.config({
+        appid: appid,
+        conf: conf
+      });
+    });
+  }
+})();</script>
 </body>
 
 </html>

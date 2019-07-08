@@ -1,0 +1,56 @@
+.site-welcome {
+    display: none;
+}
+
+.site-welcome.active {
+    z-index: 2;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #EFEFEF;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    height: 400px;
+    width: 400px;
+    position: relative;
+}
+
+.loading::before, .loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    background: #474747;
+    animation: s 1s linear infinite;
+}
+
+.loading::after {
+    animation-delay: 0.5s;
+}
+
+@keyframes s {
+    0% {
+        opacity: 1;
+        width: 0;
+        height: 0;
+    }
+    100% {
+        opacity: 0;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/*# sourceMappingURL=/loading.82c13e97.css.map */

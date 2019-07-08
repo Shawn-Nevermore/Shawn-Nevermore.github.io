@@ -180,7 +180,7 @@ svg.icon {
 }
 
 .banner {
-    background-image: url('../img/apex.jpg');
+    background-image: url('/apex.0c1174f6.jpg');
     background-size: auto 515px;
     background-position: center center;
     height: 515px;
@@ -316,14 +316,14 @@ svg.icon {
     font-size: 18px;
 }
 
-.skills, .portfolio, .message {
+.skills, .portfolio {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
 }
 
-.skills h2, .portfolio h2, .message h2 {
+.skills h2, .portfolio h2 {
     text-align: center;
     color: #3d4451;
     font-size: 34px;
@@ -466,3 +466,5 @@ svg.icon {
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: .2px;
 }
+
+/*# sourceMappingURL=/style.78032849.css.map */
