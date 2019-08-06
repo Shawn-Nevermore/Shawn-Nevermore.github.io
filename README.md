@@ -21,3 +21,5 @@ uiao.info 下的其他项目一览：
 -   轮播（回家的诱惑）：https://uiao.info/swiper-demo
 -   无缝轮播：https://uiao.info/swiper-demo/my-infinity-carousel
 -   苹果风格轮播：https://uiao.info/swiper-demo/apple-like-gallery
+-   简历跳动：https://uiao.info/resume-dance/
+
