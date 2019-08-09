@@ -1,5 +1,5 @@
-@charset "UTF-8";
 /*=S 初始化 */
+
 * {
   margin: 0;
   padding: 0;
@@ -67,7 +67,9 @@ svg.icon {
 }
 
 /* =E 初始化 */
+
 /* =S 导航栏模块 */
+
 .topNavBar {
   padding: 20px 0;
   position: fixed;
@@ -77,15 +79,15 @@ svg.icon {
   z-index: 1;
   color: #b7b7b7;
   transition: 0.4s all;
-}
-.topNavBar .sticky {
-  background-color: white;
-  color: #565656;
-  padding: 10px 0;
-  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.5);
-}
-.topNavBar .sticky .topNavBar-inner nav {
-  padding-top: 4px;
+  .sticky {
+    background-color: white;
+    color: #565656;
+    padding: 10px 0;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.5);
+    .topNavBar-inner nav {
+      padding-top: 4px;
+    }
+  }
 }
 
 .topNavBar-inner {
@@ -190,7 +192,9 @@ svg.icon {
 }
 
 /* =E 导航栏模块 */
+
 /* =S 背景图模块 */
+
 .banner {
   background-image: url('../img/apex.jpg');
   background-size: auto 515px;
@@ -204,7 +208,9 @@ svg.icon {
 }
 
 /* =E 背景图模块 */
+
 /* =S 名片模块，含介绍段落，下载按钮 */
+
 .nameCard {
   background-color: white;
   max-width: 940px;
@@ -332,7 +338,9 @@ svg.icon {
 }
 
 /* =E 名片模块，含介绍段落，下载按钮 */
+
 /* =S 技能、作品集、留言 公用信息 */
+
 .skills,
 .portfolio,
 .message {
@@ -354,7 +362,9 @@ svg.icon {
 }
 
 /* =E 技能、作品集、留言 公用信息 */
+
 /* =S 技能模块 */
+
 .skills h3 {
   font-size: 14px;
   line-height: 1.1;
@@ -362,6 +372,7 @@ svg.icon {
 }
 
 /* ==技能模块：浮动+border-box实现 */
+
 /* 
 .skills ol {
     background: white;
@@ -379,6 +390,7 @@ svg.icon {
 .skills ol li:nth-child(even) {
     float: right;
 }*/
+
 .skills .progressBar {
   height: 5px;
   background: #fae1e1;
@@ -400,6 +412,7 @@ svg.icon {
 }
 
 /* ==技能模块：flex实现 */
+
 .skills ol {
   display: flex;
   flex-direction: flow;
@@ -424,7 +437,9 @@ svg.icon {
 }
 
 /* =E 技能模块 */
+
 /* =S 作品集模块 */
+
 .portfolio {
   margin-bottom: 100px;
 }
@@ -462,7 +477,9 @@ svg.icon {
 }
 
 /* =E 作品集模块 */
+
 /* =S 侧边工具模块 */
+
 .tools-wrapper {
   position: fixed;
   right: 15px;
