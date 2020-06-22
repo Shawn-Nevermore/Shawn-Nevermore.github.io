@@ -1,6 +1,6 @@
 ## 维护中…
 
-[^_^]:
+<!-- 
     ## 个人博客系统
 
     ### （1）欢迎页动画
@@ -31,3 +31,4 @@
     - 苹果风格轮播：https://uiao.me/swiper-demo/apple-like-gallery
     - 简历跳动：https://uiao.me/resume-dance
     - 小黄人：https://uiao.me/minion
+-->
