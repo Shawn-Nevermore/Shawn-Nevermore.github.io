@@ -22,11 +22,11 @@
 
 uiao.info 下的其他项目一览：
 
-- 阴阳八卦：http://uiao.info/YinYang
-- 我的书签：https://uiao.info/myBookmarks
-- 手机画板：https://uiao.info/canvas-demo
-- 轮播（回家的诱惑）：https://uiao.info/swiper-demo
-- 无缝轮播：https://uiao.info/swiper-demo/my-infinity-carousel
-- 苹果风格轮播：https://uiao.info/swiper-demo/apple-like-gallery
-- 简历跳动：https://uiao.info/resume-dance
-- 小黄人：https://uiao.info/minion
+- 阴阳八卦：http://uiao.me/YinYang
+- 我的书签：https://uiao.me/myBookmarks
+- 手机画板：https://uiao.me/canvas-demo
+- 轮播（回家的诱惑）：https://uiao.me/swiper-demo
+- 无缝轮播：https://uiao.me/swiper-demo/my-infinity-carousel
+- 苹果风格轮播：https://uiao.me/swiper-demo/apple-like-gallery
+- 简历跳动：https://uiao.me/resume-dance
+- 小黄人：https://uiao.me/minion
